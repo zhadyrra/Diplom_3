@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: org.example.pages.MainPageTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.754 s <<< FAILURE! - in org.example.pages.MainPageTest
+tabsChooseFillingTest(org.example.pages.MainPageTest)  Time elapsed: 8.972 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="tab_tab__1SPyG  pt-4 pr-10 pb-4 pl-10 noselect">...</div> is not clickable at point (500, 215). Other element would receive the click: <div class="Modal_modal_overlay__x2ZCr"></div>
+  (Session info: chrome=104.0.5112.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Almat.local', ip: 'fe80:0:0:0:8ae:8d33:2bd8:6866%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/pq/j9sdqbx95n7...}, goog:chromeOptions: {debuggerAddress: localhost:64028}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d28f932e9fbc5ed305122608c142502a
+	at org.example.pages.MainPageTest.tabsChooseFillingTest(MainPageTest.java:39)
+

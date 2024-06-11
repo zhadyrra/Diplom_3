@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: org.example.pages.LoginPageTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 38.895 s <<< FAILURE! - in org.example.pages.LoginPageTest
+loginByButtonInMainPageTest(org.example.pages.LoginPageTest)  Time elapsed: 6.47 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button class="button_button__33qZ0 button_button_type_primary__1O7Bx button_button_size_large__G21Vg">...</button> is not clickable at point (1088, 440). Other element would receive the click: <div class="Modal_modal_overlay__x2ZCr"></div>
+  (Session info: chrome=104.0.5112.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Almat.local', ip: 'fe80:0:0:0:8ae:8d33:2bd8:6866%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/pq/j9sdqbx95n7...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 27e8aef2cc07ac56a61f7cfbf85d27ac
+	at org.example.pages.LoginPageTest.loginByButtonInMainPageTest(LoginPageTest.java:58)
+
+loginByPersonalAccountButtonTest(org.example.pages.LoginPageTest)  Time elapsed: 6.978 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <p class="AppHeader_header__linkText__3q_va ml-2">...</p> is not clickable at point (1112, 44). Other element would receive the click: <div class="Modal_modal_overlay__x2ZCr"></div>
+  (Session info: chrome=104.0.5112.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Almat.local', ip: 'fe80:0:0:0:8ae:8d33:2bd8:6866%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/pq/j9sdqbx95n7...}, goog:chromeOptions: {debuggerAddress: localhost:64178}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dc008075fa4a904b6720887c535c28f3
+	at org.example.pages.LoginPageTest.loginByPersonalAccountButtonTest(LoginPageTest.java:32)
+
+loginByButtonInRegisterPageTest(org.example.pages.LoginPageTest)  Time elapsed: 6.696 s  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <p class="AppHeader_header__linkText__3q_va ml-2">...</p> is not clickable at point (1112, 44). Other element would receive the click: <div class="Modal_modal_overlay__x2ZCr"></div>
+  (Session info: chrome=104.0.5112.101)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Almat.local', ip: 'fe80:0:0:0:8ae:8d33:2bd8:6866%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.2.1', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.101, chrome: {chromedriverVersion: 104.0.5112.79 (3cf3e8c8a07d..., userDataDir: /var/folders/pq/j9sdqbx95n7...}, goog:chromeOptions: {debuggerAddress: localhost:64195}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: daf6c529d512208fb8183abdb14c3056
+	at org.example.pages.LoginPageTest.loginByButtonInRegisterPageTest(LoginPageTest.java:85)
+

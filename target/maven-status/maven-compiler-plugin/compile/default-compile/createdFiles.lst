@@ -1,0 +1,9 @@
+org/example/pages/LoginPage.class
+org/example/Main.class
+org/example/user/User.class
+org/example/pages/PasswordRecoverPage.class
+org/example/user/UserSerialized.class
+org/example/pages/PersonAccountPage.class
+org/example/pages/MainPage.class
+org/example/pages/HeaderPage.class
+org/example/pages/RegistrPage.class
