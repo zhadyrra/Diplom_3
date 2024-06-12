@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class LoginPage extends HeaderPage {
 
     public LoginPage(WebDriver driver) {
@@ -42,13 +44,13 @@ public class LoginPage extends HeaderPage {
         element.click();
     }
     public String getTextFromLoginPage(){
-        new WebDriverWait(driver, 20)
+        new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.elementToBeClickable(loginText));
         System.out.println();
         return driver.findElement(loginText).getText();
     }
     public void waitForLoginPageLoad(){
-        new WebDriverWait(driver, 10)
+        new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.visibilityOfElementLocated(loginText));
     }
 

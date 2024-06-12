@@ -6,21 +6,21 @@ import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class ExecTest {
-    protected WebDriver driver;
-    User user = new User();
+    WebDriver driver;
+    private DriverFactory driverFactory = new DriverFactory();
 
     @Before
     public void ExecTest() {
-        DriverFactory driverFactory = new DriverFactory();
+
         driver = driverFactory.getDriver();
         driver.get("https://stellarburgers.nomoreparties.site");
     }
 
     @After
     public void tearDown() {
-
-        driver.quit();
+        driverFactory.getDriver().quit();
     }
 }

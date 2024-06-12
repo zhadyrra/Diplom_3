@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class RegistrPage extends HeaderPage{
 
     public RegistrPage(WebDriver driver) {
@@ -45,7 +47,7 @@ public class RegistrPage extends HeaderPage{
     }
 
     public boolean isSuccess (String loginPage) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe(loginPage));
         return true;
     }

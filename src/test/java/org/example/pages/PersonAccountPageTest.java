@@ -8,6 +8,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 
 public class PersonAccountPageTest extends ExecTest{
 Faker faker = new Faker();
@@ -28,7 +30,7 @@ Faker faker = new Faker();
         String profilePage = "https://stellarburgers.nomoreparties.site/account/profile";
         mainPage=new MainPage(driver);
         mainPage.clickAccountButton();
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
         wait.until(ExpectedConditions.urlToBe(profilePage));
 
     }
@@ -45,7 +47,7 @@ Faker faker = new Faker();
         personAccountPage.clickConstructorButton();
 
         String constructorPage = "https://stellarburgers.nomoreparties.site/";
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe(constructorPage));
     }
     @Test
@@ -61,7 +63,7 @@ Faker faker = new Faker();
         personAccountPage.clickLogoButton();
 
         String constructorPage = "https://stellarburgers.nomoreparties.site/";
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.urlToBe(constructorPage));
     }
     @Test

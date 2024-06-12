@@ -22,6 +22,8 @@ public class DriverFactory {
             return createYandexDriver();
         } else if (browser.equals("chrome")) {
             return createChromeDriver();
+        } else if (browser.equals("firefox")) {
+            return createFirefoxDriver();
         }
 
         return createChromeDriver();
@@ -33,10 +35,15 @@ public class DriverFactory {
     }
 
     private static WebDriver createYandexDriver() {
-        WebDriverManager.chromedriver().driverVersion("122.0.6261.128").setup();
+        WebDriverManager.chromedriver().driverVersion(System.getProperty("driver.version")).setup();
         var options = new ChromeOptions();
-        options.setBinary("/Applications/Yandex.app/Contents/MacOS/Yandex");
+        options.setBinary(System.getProperty("webdriver.yandex.bin"));
         return new ChromeDriver(options);
+    }
+    private static WebDriver createFirefoxDriver() {
+        WebDriverManager.firefoxdriver().setup();
+        var options = new FirefoxOptions().configureFromEnv();
+        return new FirefoxDriver(options);
     }
     public WebDriver getDriver(){
         return createBrowser();

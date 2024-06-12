@@ -36,7 +36,7 @@ public class PersonAccountPage extends HeaderPage{
         element.click();
     }
     public void waitForProfileLoad(){
-        new WebDriverWait(driver, 15)
+        new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='root']/div/main/div/nav/p")));
     }
 

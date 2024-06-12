@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class HeaderPage {
     protected WebDriver driver;
     public HeaderPage(WebDriver driver) {
@@ -14,7 +16,7 @@ public class HeaderPage {
     By logoButton = By.xpath("//nav/div");
     By personalAccountButton = By.xpath("//nav//*[contains(text(),\"Личный Кабинет\")]");
     public void waitingTheAccountButton(){
-        new WebDriverWait(driver, 5)
+        new WebDriverWait(driver, Duration.ofSeconds(5))
                 .until(ExpectedConditions.elementToBeClickable(personalAccountButton));
     }
     public void clickConstructorButton(){
